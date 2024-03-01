@@ -1,0 +1,93 @@
+@import 'header';
+@import 'content';
+@import 'footer';
+
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+}
+html {
+    scroll-behavior: smooth;
+}
+
+.container {
+    max-width: 1170px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+@media (max-width: 764px) {
+    .container {
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+
+}
+
+@font-face {
+    font-family: 'Montserrat-Regular';
+    src: url(../styles/Montserrat-Regular.ttf) format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Montserrat-Medium';
+    src: url(../styles/Montserrat-Medium.ttf) format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Montserrat-Bold';
+    src: url(../styles/Montserrat-Bold.ttf) format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Montserrat-Italic';
+    src: url(../styles/Montserrat-Italic.ttf) format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Poppins-Bold';
+    src: url(../styles/Poppins-Bold.ttf) format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+#preloader {
+    background: #0b1424 url(../img/slidin-squares.gif);
+    background-position: center;
+    background-size: 30%;
+    background-repeat: no-repeat;
+    height: 100vh;
+    width: 100%;
+    position: fixed;
+    z-index: 1000;
+}
+
+.back-to-top {
+    &:hover {
+        background-color: #e65540;
+    }
+    position: fixed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 40px;
+    height: 40px;
+    right: 15px;
+    background-color: rgba(0, 0, 0, 0.5);
+    border-radius: 4px;
+    transition: all .4s;
+    i {
+        color: #fff;
+
+    }
+}

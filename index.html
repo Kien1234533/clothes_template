@@ -1,0 +1,476 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shopping</title>
+    <link rel="stylesheet" href="assets/styles/index.css">
+    <link rel="shortcut icon" href="assets/favicon.ico" type="image/x-icon">
+    <script src="https://kit.fontawesome.com/cbeaa37f05.js" crossorigin="anonymous"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick-theme.min.css"
+        integrity="sha512-17EgCFERpgZKcm0j0fEq1YCJuyAWdz9KUtv1EjVuaOz8pDnh/0nZxmU6BBXwaaxqoi9PQXnRWqlcDB027hgv9A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.css"
+        integrity="sha512-yHknP1/AwR+yx26cB1y0cjvQUMvEa2PFzt1c9LlS4pRQ5NOTZFWbhBig+X9G9eYW/8m0/4OXNx8pxJ6z57x0dw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+    <!-- Top -->
+    <div id="top"></div>
+    <!-- reload -->
+    <div id="preloader"></div>
+    <!-- Header -->
+    <header class="header">
+        <div class="header__top">
+            <div class="container">
+                <div class="header__top--icon">
+                    <i class="fa-brands fa-facebook-f"></i>
+                    <i class="fa-brands fa-instagram"></i>
+                    <i class="fa-brands fa-pinterest-p"></i>
+                    <i class="fa-brands fa-snapchat"></i>
+                    <i class="fa-brands fa-youtube"></i>
+                </div>
+                <div class="header__top--content">
+                    <span>Free shipping for standard order over $100</span>
+                </div>
+            </div>
+        </div>
+        <div class="header__bot">
+            <div class="container">
+                <div class="header__bot--child">
+                    <img src="assets/img/logo.png" alt="">
+                </div>
+                <div class="header__bot--child">
+                    <ul>
+                        <li><a href="">Home</a></li>
+                        <li><a href="">Shop</a></li>
+                        <li><a href="">Sale</a></li>
+                        <li><a href="">Features</a></li>
+                        <li><a href="">Blog</a></li>
+                        <li><a href="">About</a></li>
+                        <li><a href="">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="header__bot--child">
+                    <i class="fa-regular fa-circle-user"></i>
+                    <span>|</span>
+                    <i class="fa-solid fa-cart-shopping"></i>
+
+                </div>
+                <i id="nav" class="fa-solid fa-bars"></i>
+            </div>
+        </div>
+    </header>
+
+    <!-- content -->
+    <div class="content">
+        <div class="content__banner">
+            <div class="content__banner--list">
+                <div class="list-item">
+                    <img src="assets/img/pexel-banner1.jpg" alt="">
+                </div>
+                <div class="list-item">
+                    <img src="assets/img/pexel-banner2.jpg" alt="">
+                </div>
+                <div class="list-item">
+                    <img src="assets/img/pexel-banner3.jpg" alt="">
+                </div>
+                <div class="list-item">
+                    <img src="assets/img/pexel-banner4.jpg" alt="">
+                </div>
+                <div class="list-item">
+                    <img src="assets/img/slide5.png" alt="">
+                </div>
+            </div>
+            <!-- Button prev and next -->
+            <div class="content__banner--button">
+                <button id="prev"><i class="fa-solid fa-angle-left"></i></button>
+                <button id="next"><i class="fa-solid fa-angle-right"></i></button>
+            </div>
+
+            <!-- dots  -->
+            <ul class="content__banner--dots">
+                <li class="active"></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+            </ul>
+
+            <!-- text inside -->
+            <div class="content__banner--text">
+                <h2>Women Collection 2024</h2>
+                <h1>NEW ARRIVALS</h1>
+                <button>SHOP NOW</button>
+            </div>
+        </div>
+
+        <div class="content__categories">
+            <div class="container">
+                <div class="content__categories--list">
+                    <div class="list-item">
+                        <img src="assets/img/jacket.jpg" alt="">
+                        <button>Jackets</button>
+                    </div>
+                    <div class="list-item">
+                        <img src="assets/img/watch.jpg" alt="">
+                        <button>Watches</button>
+                    </div>
+                    <div class="list-item">
+                        <img src="assets/img/bag.jpg" alt="">
+                        <button>Bags</button>
+                    </div>
+                    <div class="list-item">
+                        <img src="assets/img/sunglass.jpg" alt="">
+                        <button>Sunglasses</button>
+                    </div>
+                    <div class="list-item">
+                        <img src="assets/img/shoe.jpg" alt="">
+                        <button>Shoes</button>
+                    </div>
+                    <div class="list-item">
+                        <div class="list-item-content">
+                            <h1>Sign up & get 20% off</h1>
+                            <span>Be the frist to know about the latest fashion news and get exclu-sive offers</span>
+                            <button>Sign up</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="content__featured">
+            <div class="container">
+                <h1>FEATURED PRODUCTS</h1>
+                <div class="content__featured--list">
+                    <div class="list-item">
+                        <img src="assets/img/item.png" alt="">
+                        <div class="status">
+                            <a href="">New</a>
+                            <i class="fa-regular fa-heart"></i>
+                        </div>
+                        <button>Add to cart</button>
+                        <div class="product-info">
+                            <a href="">Denim jacket blue</a>
+                            <p>$92.50</p>
+                        </div>
+                    </div>
+                    <div class="list-item">
+                        <img src="assets/img/item.png" alt="">
+                        <div class="status">
+                            <a href="">New</a>
+                            <i class="fa-regular fa-heart"></i>
+                        </div>
+                        <button>Add to cart</button>
+                        <div class="product-info">
+                            <a href="">Denim jacket blue</a>
+                            <p>$92.50</p>
+                        </div>
+                    </div>
+                    <div class="list-item">
+                        <img src="assets/img/item.png" alt="">
+                        <div class="status">
+                            <a href="">New</a>
+                            <i class="fa-regular fa-heart"></i>
+                        </div>
+                        <button>Add to cart</button>
+                        <div class="product-info">
+                            <a href="">Denim jacket blue</a>
+                            <p>$92.50</p>
+                        </div>
+                    </div>
+                    <div class="list-item">
+                        <img src="assets/img/item.png" alt="">
+                        <div class="status">
+                            <a href="">New</a>
+                            <i class="fa-regular fa-heart"></i>
+                        </div>
+                        <button>Add to cart</button>
+                        <div class="product-info">
+                            <a href="">Denim jacket blue</a>
+                            <p>$92.50</p>
+                        </div>
+                    </div>
+                    <div class="list-item">
+                        <img src="assets/img/item.png" alt="">
+                        <div class="status">
+                            <a href="">New</a>
+                            <i class="fa-regular fa-heart"></i>
+                        </div>
+                        <button>Add to cart</button>
+                        <div class="product-info">
+                            <a href="">Denim jacket blue</a>
+                            <p>$92.50</p>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+        <div class="content__adver">
+            <div class="container">
+                <div class="content__adver--left">
+                    <img src="assets/img/model.png" alt="">
+                    <div class="content">
+                        <span>The Beauty</span>
+                        <h3>Lookbook</h3>
+                        <a href="#">View Collection</a>
+                    </div>
+                </div>
+                <div class="content__adver--right">
+                    <img src="assets/img/sunglass.png" alt="">
+                    <div class="content">
+                        <a href="#">Gafas sol Hawkers one</a> <br>
+                        <span id="old">$29.50</span>
+                        <span>$15.90</span>
+                        <div class="time">
+                            <div class="time-c">
+                                <div class="box">
+                                    <span>10</span>
+                                    <span>days</span>
+                                </div>
+
+                            </div>
+                            <div class="time-c">
+                                <div class="box">
+                                    <span>10</span>
+                                    <span>hrs</span>
+                                </div>
+
+                            </div>
+                            <div class="time-c">
+                                <div class="box">
+                                    <span>10</span>
+                                    <span>mins</span>
+                                </div>
+
+                            </div>
+                            <div class="time-c">
+                                <div class="box">
+                                    <span>10</span>
+                                    <span>secs</span>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="content__blog">
+            <div class="container">
+                <h1>Our Blog</h1>
+                <div class="content__blog--list">
+                    <div class="list-item">
+                        <a href="">
+                            <img src="assets/img/watch.jpg" alt="">
+                        </a>
+                        <div class="content">
+                            <h4>
+                                <a href="">Black Friday Guide: Best Sales & Discount Codes</a>
+                            </h4>
+                            <span id="title">By</span>
+                            <span>Nancy Ward</span>
+                            <span id="title">on</span>
+                            <span>July 22, 2017</span>
+                            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Incidunt ducimus praesentium
+                                tempora in, amet suscipit repudiandae molestiae non eligendi ipsa maxime sapiente illo
+                                doloremque et! Officia ipsa libero fuga nulla!</p>
+                        </div>
+                    </div>
+                    <div class="list-item">
+                        <a href="">
+                            <img src="assets/img/watch.jpg" alt="">
+                        </a>
+                        <div class="content">
+                            <h4>
+                                <a href="">Black Friday Guide: Best Sales & Discount Codes</a>
+                            </h4>
+                            <span id="title">By</span>
+                            <span>Nancy Ward</span>
+                            <span id="title">on</span>
+                            <span>July 22, 2017</span>
+                            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Incidunt ducimus praesentium
+                                tempora in, amet suscipit repudiandae molestiae non eligendi ipsa maxime sapiente illo
+                                doloremque et! Officia ipsa libero fuga nulla!</p>
+                        </div>
+                    </div>
+                    <div class="list-item">
+                        <a href="">
+                            <img src="assets/img/jacket.jpg" alt="">
+                        </a>
+                        <div class="content">
+                            <h4>
+                                <a href="">Black Friday Guide: Best Sales & Discount Codes</a>
+
+                            </h4>
+                            <span id="title">By</span>
+                            <span>Nancy Ward</span>
+                            <span id="title">on</span>
+                            <span>July 22, 2017</span>
+                            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Incidunt ducimus praesentium
+                                tempora in, amet suscipit repudiandae molestiae non eligendi ipsa maxime sapiente illo
+                                doloremque et! Officia ipsa libero fuga nulla!</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="content__ins">
+            <h1>@ FOLLOW US ON INSTAGRAM <img src="assets/img/insta.png" alt=""></h1>
+            <div class="content__ins--list">
+                <div class="list-item">
+                    <img src="assets/img/way.jpg" alt="">
+                    <div class="content">
+                        <div class="top">
+                            <span><i class="fa-regular fa-heart"></i></span>
+                            <span>39</span>
+                        </div>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo consectetur animi neque
+                            aperiam, libero, ad sunt vitae nesciunt temporibus totam error quam est eos, et ratione
+                            similique molestiae maxime reprehenderit?</p>
+                        <span>Photo by @kienng</span>
+                    </div>
+                </div>
+                <div class="list-item">
+                    <img src="assets/img/ronaldo.jpg" alt="">
+                    <div class="content">
+                        <div class="top">
+                            <span><i class="fa-regular fa-heart"></i></span>
+                            <span>39</span>
+                        </div>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo consectetur animi neque
+                            aperiam, libero, ad sunt vitae nesciunt temporibus totam error quam est eos, et ratione
+                            similique molestiae maxime reprehenderit?</p>
+                        <span>Photo by @kienng</span>
+                    </div>
+                </div>
+                <div class="list-item">
+                    <img src="assets/img/gate.jpg" alt="">
+                    <div class="content">
+                        <div class="top">
+                            <span><i class="fa-regular fa-heart"></i></span>
+                            <span>39</span>
+                        </div>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo consectetur animi neque
+                            aperiam, libero, ad sunt vitae nesciunt temporibus totam error quam est eos, et ratione
+                            similique molestiae maxime reprehenderit?</p>
+                        <span>Photo by @kienng</span>
+                    </div>
+                </div>
+                <div class="list-item">
+                    <img src="assets/img/elon.jpg" alt="">
+                    <div class="content">
+                        <div class="top">
+                            <span><i class="fa-regular fa-heart"></i></span>
+                            <span>39</span>
+                        </div>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo consectetur animi neque
+                            aperiam, libero, ad sunt vitae nesciunt temporibus totam error quam est eos, et ratione
+                            similique molestiae maxime reprehenderit?</p>
+                        <span>Photo by @kienng</span>
+                    </div>
+                </div>
+                <div class="list-item">
+                    <img src="assets/img/talor.jpg" alt="">
+                    <div class="content">
+                        <div class="top">
+                            <span><i class="fa-regular fa-heart"></i></span>
+                            <span>39</span>
+                        </div>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo consectetur animi neque
+                            aperiam, libero, ad sunt vitae nesciunt temporibus totam error quam est eos, et ratione
+                            similique molestiae maxime reprehenderit?</p>
+                        <span>Photo by @kienng</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="content__get">
+            <div class="list-item">
+                <h4>Free Delivery Worldwide</h4>
+                <a href="">Click here for more info</a>
+            </div>
+            <div class="list-item">
+                <h4>30 Days Return</h4>
+                <a href="">Simply return it within 30 days for an exchange.</a>
+            </div>
+            <div class="list-item">
+                <h4>Store Opening</h4>
+                <a href="">Shop open from Monday to Sunday</a>
+            </div>
+        </div>
+    </div>
+    <footer class="footer">
+        <div class="container">
+            <div class="footer__box">
+                <div class="list-item">
+                    <h4>GET IN TOUCH</h4>
+                    <p>Any questions? Let us know in store at 8th floor, 379 Hudson St, New York, NY 10018 or call us on
+                        (+1) 96 716 6879</p>
+                    <div class="icon">
+                        <i class="fa-brands fa-facebook-f"></i>
+                        <i class="fa-brands fa-instagram"></i>
+                        <i class="fa-brands fa-pinterest-p"></i>
+                        <i class="fa-brands fa-snapchat"></i>
+                        <i class="fa-brands fa-youtube"></i>
+                    </div>
+                </div>
+                <div class="list-item">
+                    <div class="child-item">
+                        <div class="item">
+                            <h4>CATEGORIES</h4>
+                            <ul>
+                                <li>Men</li>
+                                <li>Women</li>
+                                <li>Dresses</li>
+                                <li>Sunglasses</li>
+                            </ul>
+                        </div>
+                        <div class="item">
+                            <h4>LINKS</h4>
+                            <ul>
+                                <li>Search</li>
+                                <li>About Us</li>
+                                <li>Contact Us</li>
+                                <li>Returns</li>
+                            </ul>
+                        </div>
+                        <div class="item">
+                            <h4>HELP</h4>
+                            <ul>
+                                <li>Track Order</li>
+                                <li>Returns</li>
+                                <li>Shipping</li>
+                                <li>FAQs</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="list-item">
+                    <h4>NEWSLETTER</h4>
+                    <input type="text" placeholder="email@example.com"> <br>
+                    <button>Subscribe</button>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <a id="back-top" href="#top">
+        <div class="back-to-top"><i class="fa-solid fa-jet-fighter-up"></i></div>
+    </a>
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.js"
+        integrity="sha512-HGOnQO9+SP1V92SrtZfjqxxtLmVzqZpjFFekvzZVWoiASSQgSr4cw9Kqd2+l8Llp4Gm0G8GIFJ4ddwZilcdb8A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="assets/js/app.js"></script>
+</body>
+
+
+</html>
