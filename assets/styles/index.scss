@@ -1,6 +1,8 @@
 @import 'header';
 @import 'content';
 @import 'footer';
+@import 'content_shop';
+@import 'content_detail';
 
 body {
     margin: 0;
@@ -29,6 +31,12 @@ html {
 @font-face {
     font-family: 'Montserrat-Regular';
     src: url(../styles/Montserrat-Regular.ttf) format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Montserrat-Black';
+    src: url(../styles/Montserrat-Black.ttf) format('truetype');
     font-weight: normal;
     font-style: normal;
 }
@@ -61,7 +69,10 @@ html {
     font-style: normal;
 }
 
-#preloader {
+.preloader {
+    @media (max-width: 764px) {
+        background-size: 100%;
+    }
     background: #0b1424 url(../img/slidin-squares.gif);
     background-position: center;
     background-size: 30%;
@@ -91,3 +102,4 @@ html {
 
     }
 }
+

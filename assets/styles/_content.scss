@@ -1,5 +1,7 @@
 .content {
-    margin-top: 0;
+    @media (max-width: 764px) {
+        margin-top: 80px;
+    }
 
     &__banner {
         @media (max-width: 764px) {
